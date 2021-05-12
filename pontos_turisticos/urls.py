@@ -28,9 +28,9 @@ from rest_framework.authtoken import views
 
 router = routers.DefaultRouter()
 router.register(r'pontoturistico',pontoTuristicoViewSet, basename= pontoTuristicoViewSet)
-router.register(r'atracoes',AtracoesViewSet, basename= AtracoesViewSet)
-router.register(r'enderecos',EnderecoViewSet, basename= EnderecoViewSet)
-router.register(r'comentario',ComentarioViewSet, basename= ComentarioViewSet)
+router.register(r'atracoes',AtracoesViewSet)
+router.register(r'enderecos',EnderecoViewSet)
+router.register(r'comentario',ComentarioViewSet)
 
 urlpatterns = [
     path('',include(router.urls)),

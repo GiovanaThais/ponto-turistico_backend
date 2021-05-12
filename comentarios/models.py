@@ -6,7 +6,7 @@ class Comentario(models.Model):
     comentario = models.TextField("comentários")
     data = models.DateField("data", auto_now_add=True)
     aprovado = models.BooleanField("status", default=True)
-    notas = models.DecimalField(max_digits=3, decimal_places=2)
+    notas = models.DecimalField(max_digits=3, decimal_places=2, null=True, blank=True)
 
     def __str__(self):
         return self.usuario.username

@@ -6,7 +6,7 @@ from enderecos.models import Endereco
 
 
 class pontoTuristico(models.Model):
-    nome = models.CharField(name='nome', max_length=130)
+    nome = models.CharField('nome', max_length=130)
     descricao= models.TextField(name='descricao')
     status= models.BooleanField(name='status',default=False)
     atracoes = models.ManyToManyField(Atracao)
