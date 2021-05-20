@@ -2,7 +2,7 @@ from rest_framework.serializers import ModelSerializer
 from core.models import pontoTuristico
 from atracoes.api.serializers import AtracaoSerializer
 from enderecos.api.serializers import EnderecoSerializer
-#from rest_framework.fields import SearializerMethodField
+from rest_framework.fields import SerializerMethodField
 from atracoes.models import Atracao
 from enderecos.models import Endereco
 
